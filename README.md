@@ -1,5 +1,7 @@
 # Drone-Created Art: from PNG to X, Y, Z
 
+Project for AE 483: Autonomous Systems Lab
+
 Created by Caleb Carrigan, Anna Hylbert, Eric Monson, and Matt Taylor
 
 ## Code Structure
@@ -7,28 +9,29 @@ Created by Caleb Carrigan, Anna Hylbert, Eric Monson, and Matt Taylor
 Our repository contains the following structure:
 
 
-```firmware/```: Finalized versions of modified crazyflie firmware code.
+```analysis/```: Finalized Jupyter notebooks and data.
 
-- ```file1.py```: Add description.
+- ```results/```: Contains logs and videos from test flights of our drone.
+- ```moi.ipynb```: Lab03 modified for our final project. Calculates moment of inertia in the x, y, and z directions.
+- ```force_and_moment_parameter.ipynb```: Lab04 modified for our final project. Calculates $k_f$ and $k_m$.
+- ```Observer_Model.ipynb```: Lab07 modified for our final project.
+- ```Observer_Offline_Implementation.ipynb```: Lab08 modified for our final project.
+- ```Observer_Online_Implementation.ipynb```: Lab09 modified for our final project.
 
-- ```file2.py```: Add description.
 
 ```client/```: Contains crazyflie client code for flying the drone in Python.
 
 - ```data/```: Contains images used for edge detection.
-
-- ```file1.py```: Add description.
-
-- ```file2.py```: Add description.
+- ```edge_detector.py```: Contains classes and functions pertaining to edge detection. Canny edge detection, DFS traversal, etc.
+- ```flight.py```: Flight code used to draw images. 3 step pipeline to go from image -> edge mask -> move commands -> drone flight. Uses command line arguments to input an image along with hyper-parameters of standard deviation, image height, width, etc. 
 
 
-```analysis/```: Finalized Jupyter notebooks and data.
+```firmware/```: Finalized versions of modified crazyflie firmware code modified for the use of the lighthouse deck.
 
-- ```results/```: Contains logs and videos from test flights of our drone.
+- ```controller_ae483.h```: An additional function is added called `ae483UpdateWithLighthouse` which tracks the lighthouse position data.
+- ```controller_ae483.c```: Contains a custom controller and observer implementation.
+- ```lighthouse_position_est.c```: Default firmware is modified to grab x, y, and z position calculated using the crossing beams method of the lighthouse positioning system.
 
-- ```file1.ipynb```: Add description.
-
-- ```file2.ipynb```: Add description.
 
 ## Environment Setup
 
