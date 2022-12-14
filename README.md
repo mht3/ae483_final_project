@@ -1,4 +1,6 @@
-# ae483_final_project
+# Drone-Created Art: from PNG to X, Y, Z
+
+Created by Caleb Carrigan, Anna Hylbert, Eric Monson, and Matt Taylor
 
 ## Code Structure
 
