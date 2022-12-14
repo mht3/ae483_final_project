@@ -5,9 +5,6 @@
 Our repository contains the following structure:
 
 
-
-```data/```: Contains images used for edge detection.
-
 ```firmware/```: Finalized versions of modified crazyflie firmware code.
 
 - ```file1.py```: Add description.
@@ -16,9 +13,12 @@ Our repository contains the following structure:
 
 ```client/```: Contains crazyflie client code for flying the drone in Python.
 
+- ```data/```: Contains images used for edge detection.
+
 - ```file1.py```: Add description.
 
 - ```file2.py```: Add description.
+
 
 ```analysis/```: Finalized Jupyter notebooks and data.
 
