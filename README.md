@@ -11,12 +11,15 @@ Our repository contains the following structure:
 
 ```analysis/```: Finalized Jupyter notebooks and data.
 
-- ```results/```: Contains logs and videos from test flights of our drone.
+- ```PNG to X,Y,Z.ipynb```: Massive notebook compiling all the analysis performed for the project. Can be run from start to finish to see how controller and observer were implemented. Other notebooks in this folder just have extra analysis in case further information is desired.
+- ```results/```: Contains logs, videos, and generated plots from test flights of our drone.
 - ```moi.ipynb```: Lab03 modified for our final project. Calculates moment of inertia in the x, y, and z directions.
 - ```force_and_moment_parameter.ipynb```: Lab04 modified for our final project. Calculates $k_f$ and $k_m$.
+- ```controller_weights.ipynb```: Lab05 and Lab06 modified for our final project. Calculates the $K$ gain matrix and creates the custom controller.
 - ```Observer_Model.ipynb```: Lab07 modified for our final project.
-- ```Observer_Offline_Implementation.ipynb```: Lab08 modified for our final project.
-- ```Observer_Online_Implementation.ipynb```: Lab09 modified for our final project.
+- ```Observer_Offline_Implementation.ipynb```: Lab08 modified for our final project. Calculates the $L$ gain matrix and creates the custom observer.
+- ```Observer_Online_Implementation.ipynb```: Lab09 modified for our final project. Analyzes the performance of the custom observer on the drone.
+- ```viewer.ipynb```: Simple notebook to visualize the flight of the drone without needing to open the complex analysis notebooks.
 
 
 ```client/```: Contains crazyflie client code for flying the drone in Python.
@@ -67,6 +70,10 @@ conda install -c anaconda scikit-image
 ##### Custom Path Finding Algorithm
 
 ![google](https://user-images.githubusercontent.com/60635839/205718544-fc666cd8-1dac-46e6-af81-5c2d2a3366c3.gif)
+
+### Lighthouse Positioning Representation
+
+![lighthouse](https://www.bitcraze.io/images/documentation/overview/lighthouse.png)
 
 ### Resources
 
